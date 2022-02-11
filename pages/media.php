@@ -1,8 +1,8 @@
 <?php
 
     //imports
-    require_once('/xampp/htdocs/Gean/calculoAtividade/pages/mudoloMedia/calculo.php');
-    require_once('/xampp/htdocs/Gean/calculoAtividade/pages/mudoloMedia/config.php');
+    require_once('./mudoloMedia/calculo.php');
+    require_once('./mudoloMedia/config.php');
 
     //Declaração de variaveis
     //nomeVar = (tipoDados) valorInicial
