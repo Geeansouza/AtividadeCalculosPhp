@@ -36,24 +36,12 @@
 		//validação de tratamento de erro para caixa vazia
 		if($_POST['txtn1'] == ""|| $_POST['txtn2'] == ""){
 			echo(ERRO_MSG_CAIXA_VAZIA);
+		}elseif(!is_numeric($valor1) || !is_numeric($valor2)) {
+			echo(ERRO_MESG_CARACTER_INVALIDO_TEXTO);
 		}else{
-				if(!isset($_POST['rdocalc'])){
-					echo(ERRO_MESG_OPERACAO_CALCULO);
-				}else{ 
-					if(!is_numeric($valor1) || !is_numeric($valor2)){
-						echo(ERRO_MESG_CARACTER_INVALIDO_TEXTO);
-					}else{
-						//apenas podemos receber o valor do rdo se ele existir
-						$opcao = strtoupper($_POST['rdocalc']);
-
-						$resultado = operacaoMatematica($valor1, $valor2, $opcao);
-
-			 	}
-			 }
-
+		   $resultado = tabuada($valor1, $valor2);
 		}
 	}
-
 
 ?>
 <html>

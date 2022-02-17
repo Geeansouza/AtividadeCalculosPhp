@@ -1,77 +1,90 @@
 
-body {
-    background-image: url(../img/background2.jpg);
-    filter: drop-shadow(3px 8px 10px #2200ff);
-    padding: 10px;
-    margin: 20px;
-    box-sizing: border-box;
-    height: 100vh;
-    background-size: cover;
-    background-position: right top;
-    display: flex;
-    flex-direction: column;
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
 }
-header{
-    background-color: #0005;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
+
+body {
+	font-family: montserrat;
 }
 nav{
+	background: #5434af;
+	height: 80px;
+	width: 100%;
+}
+label.logo {
     display: flex;
-    
+    flex-direction: row-reverse;
+	color: white;
+	font-size: 35px;
+	font-weight: bold;
+   padding-right: 20px;
 }
-#menu{
-    width: 50px;
-    height: 40px;
-    margin: 30px 0 20px 20px;
-    cursor: pointer;
+
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
 }
-.bar{
+nav ul li a {
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+a.active, a:hover {
+	background: #1d075f;
+	transition: .5s;
+}
+.checkbtn {
+    width: 10px;
     height: 10px;
-    width: 100%;
-    background-color: black;
-    display: block;
-    border-radius: 40px;
-    transition: 0.3 ease;
-}
-#bar1{
-    transform: translateY(-4px);
-}
-#bar3{
-    transform: translateY(4px);
-}
-/* #menu div:hover > .dropdown-menu{
-    display: block;
-} */
-.dropdown-menu{
-    background-color: rgb(217, 236, 241);
     display: flex;
-    flex-direction: column;
-    list-style: none;
-    width: 250px;
-    padding: 0px;
-
+    align-content: flex-start;
+    margin-left: 30px;
+	font-size: 30px;
+	color: white;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
 }
-.dropdown-menu li{
-
-    width: 250px;
-    height: 75px;
-    border: solid black 1px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#check {
+	display: none;
 }
-.dropdown-menu a{
-    /* display: none; */
-    color: black;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    transition: color 0.6s;
-}
-    .dropdown-menu li:hover{
-        background-color: #2200ff;
-        color: white;
+	v ul li a{
+		font-size: 16px;
+	}
+	.checkbtn {
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 25%;
+		height: 100vh;
+		background-color: lightgreen;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a {
+		font-size: 20px;
+	}
+	a:hover, a.active {
+		background: none;
+		color: #5434af;
+	}
+	#check:checked ~ ul {
+		left: 0;
+	
 }
