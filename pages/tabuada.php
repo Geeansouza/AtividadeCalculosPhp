@@ -47,8 +47,8 @@
 
             <div id="form">
                 <form name="frmtabuada" method="post" action="tabuada.php">
-						Valor 1:<input type="text" name="txtn1" value="<?=$valor1;?>" > <br>
-						Valor 2:<input type="text" name="txtn2" value="<?=$valor2;?>" > <br>
+						Valor 1:<input type="number" name="txtn1" value="<?=$valor1;?>" > <br>
+						Valor 2:<input type="number" name="txtn2" value="<?=$valor2;?>" > <br>
 						<input type="submit" name="btncalc" value ="Calcular" >
 				<div id="wrapper">
                 <div class="scrollbar" id="resultado">
