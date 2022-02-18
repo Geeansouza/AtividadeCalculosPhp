@@ -39,7 +39,10 @@
 		}elseif(!is_numeric($valor1) || !is_numeric($valor2)) {
 			echo(ERRO_MESG_CARACTER_INVALIDO_TEXTO);
 		}else{
-		   $resultado = tabuada($valor1, $valor2);
+		   	//apenas podemos receber o valor do rdo se ele existir
+			   $opcao = strtoupper($_POST['rdocalc']);
+
+			   $resultado = operacaoMatematica($valor1, $valor2, $opcao);
 		}
 	}
 
@@ -47,10 +50,25 @@
 <html>
     <head>
         <title>Calculadora - Simples</title>
-		<link rel="stylesheet" type="text/css" href="../css/styleCalculadora.css">
+		<link rel="stylesheet" type="text/css" href="./cssCal.css/style.css">
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
     </head>
 	<body>
-        
+        <main>
+			<nav>
+					<input type="checkbox" id="check">
+						<label for="check" class="checkbtn">
+							<i class="fas fa-bars"></i>
+						</label>
+					<label class="logo">Calculadora</label>
+					<ul>
+						<li><a href="../index.php">inicio</a></li>
+						<li><a class="active" href="">Calculadora</a></li>
+						<li><a href="../Media/media.php">Media</a></li>
+						<li><a href="../Tabuada/tabuada.php">Tabuada</a></li>
+						<li><a href="../ParImpar/parImpar.php">Par e Impar</a></li>
+					</ul>
+			</nav>
         <div id="conteudo">
             <div id="titulo">
                 Calculadora Simples
@@ -71,14 +89,14 @@
 						</div>	
 						<div id="resultado">
 						 <?=$resultado;?>
-						</div>
+					</div>
 						
-					</form>
+				</form>
             </div>       
            
         </div>
         
-		
+		</main>
 	</body>
 
 </html>

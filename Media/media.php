@@ -54,10 +54,26 @@
 <html lang="pt-BR">
     <head>
         <title>Média</title>
-       <link rel="stylesheet" type="text/css" href="../css/styleMedia.css">
+       <link rel="stylesheet" type="text/css" href="./CssMedia/style.css">
+       <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <meta charset="utf-8">
     </head>
 	<body>
+
+        <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <label class="logo">Media</label>
+                <ul>
+                    <li><a href="../index.php">inicio</a></li>
+                    <li><a href="../Calculadora/calculadora.php">Calculadora</a></li>
+                    <li><a class="active" href="">Media</a></li>
+                    <li><a href="../Tabuada/tabuada.php">Tabuada</a></li>
+                    <li><a href="../ParImpar/parImpar.php">Par e Impar</a></li>
+                </ul>
+        </nav>
         
         <div id="conteudo">
             <header id="titulo">

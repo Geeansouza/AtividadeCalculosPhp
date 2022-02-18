@@ -1,0 +1,172 @@
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;	
+}
+body {
+	font-family: montserrat;
+	background-image: url(../img/background2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#conteudo{
+	display: flex;
+	flex-direction: column;
+	background-color: aquamarine;
+	width: 500px;
+	height: 360px;
+	margin-top: 20px;
+	margin-left: 500px;	
+	border: solid 1px blue;
+	text-align: center;
+}
+
+#titulo{
+    width: inherit;
+    height: 80px;
+    background-color: #000000;
+    color: #ffffff;
+    box-sizing: border-box;
+    padding-top: 25px;
+    font-size: 26px;
+    font-family: verdana;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+}
+
+#form{
+    width: inherit;
+    height: 185px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+input{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#resultado{
+    width: 164px;
+    height: 102px;
+    box-sizing: border-box;
+    padding-top: 2px;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+}
+.scrollPar{
+    background-color: #cccccc;
+    width: 100px;
+    height: 125px;
+    overflow-y: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: 5;
+    border: solid 1px black;
+}
+.scrollimpar{
+    background-color: #cccccc;
+    width: 100px;
+    height: 125px;
+    overflow-y: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 35px;
+    margin-right: auto;
+    border :solid 1px black
+}
+.scrolls{
+    display: flex;
+    align-content: space-between;
+}
+
+#container_opcoes{
+    width: 200px;
+    height: 50px;
+    float: left;
+    text-align: left;
+}
+nav{
+	background-color: #b2dbd6;
+	height: 80px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+label.logo {
+	width: 230px;
+	height: 50px;
+	color: white;
+	font-size: 35px;
+}
+
+nav ul li {
+	display: inline-block;
+	margin: 0 5px;
+}
+nav ul li a {
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+a.active, a:hover {
+	background: whitesmoke;
+	transition: .5s;
+}
+
+.checkbtn {
+    width: 10px;
+    height: 10px;
+    display: flex;
+    align-content: flex-start;
+    margin-left: 30px;
+	font-size: 30px;
+	color: white;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+	
+}
+#check {
+	display: none;
+}
+	v ul li a{
+		font-size: 16px;
+	}
+	.checkbtn {
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 15%;
+		height: 100vh;
+		background-color: #97bdb8;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a {
+		font-size: 20px;
+	}
+	a:hover, a.active {
+		background: none;
+		color: wheat;
+	}
+	#check:checked ~ ul {
+		left: 0;
+	
+}
